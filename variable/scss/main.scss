@@ -1,0 +1,17 @@
+$secondary-color: #f2cc8f;
+$text-color: #e07a5f;
+
+body {
+    $primary-color: #f4f1de !global;
+    background-color: $primary-color;
+}
+
+$alert: (
+    'danger': red,
+    'success': green,
+    'warning': orange
+);
+
+h1 {
+    color: map-get($alert, 'success');
+}
